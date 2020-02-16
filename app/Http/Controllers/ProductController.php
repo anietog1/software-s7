@@ -10,6 +10,9 @@ class ProductController extends Controller
         $listProducts = array();
         $listProducts[121] = array("name" => "Tv samsung", "price" => "1000");
         $listOfSizes = array("XS", "S", "M", "L", "XL");
+
+        if(!array_key_exists($id, $listProducts)) return redirect('index');
+
         $data["title"] = $listProducts[$id]["name"];
         $data["product"] = $listProducts[$id];
         $data["sizes"] = $listOfSizes;
