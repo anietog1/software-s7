@@ -18,3 +18,5 @@ Route::get('/', function () {
 Route::get('/index', 'HomeController@index')->name("home.index");
 Route::get('/contact', 'HomeController@contact')->name("home.contact");
 Route::get('/product/show/{id}', 'ProductController@show')->name("product.show");
+Route::get('/product/create', 'ProductController@create')->name("product.create");
+Route::post('/product/save', 'ProductController@save')->name("product.save");
