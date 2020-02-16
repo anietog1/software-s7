@@ -18,18 +18,20 @@
                     {{ config('app.name', 'Laravel') }}
                 </a>
 
-                <a class="navbar-brand" href="{{ route('product.show', ['id' => 121]) }}">
-                    {{ config('PRODUCT121', 'PRODUCT121') }}
-                </a>
-
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-                        <!-- Future Left Side Links --> 
+                    <ul class="navbar-nav mr-auto">                    
+                        <a href="{{ route('product.show', ['id' => 121]) }}">
+                            Product 121
+                        </a>
+
+                        <a style="margin-left:0.7em" href="{{ route('product.create') }}">
+                            New Product
+                        </a>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
