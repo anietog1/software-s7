@@ -23,18 +23,18 @@ class ProductController extends Controller
     {
         $data = []; //to be sent to the view
         $data["title"] = "Create product";
-
+        $data["products"] = Product::all();
         return view('product.create')->with("data",$data);
     }
-
+    
     public function save(Request $request)
     {
         $request->validate([
             "name" => "required",
-            "price" => ["required", "gt:0"]
+            "price" => "required|numeric|gt:0"
         ]);
-
-        return view('product.created');
+        Product::create($request->only(["name","price"]));
+        return back()->with('success','Item created successfully!');
     }
 }
 

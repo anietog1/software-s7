@@ -5,6 +5,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+            @include('util.message')
             <div class="card">
                 <div class="card-header">Create product</div>
                 <div class="card-body">
@@ -25,6 +26,16 @@
 
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="row p-5">
+        <div class="col-md-12">
+            <ul id="errors">
+                @foreach($data["products"] as $product)
+                    <li>{{ $product->getId() }} - {{ $product->getName() }} : {{ $product->getPrice() }}</li>
+                @endforeach
+            </ul>
         </div>
     </div>
 </div>
