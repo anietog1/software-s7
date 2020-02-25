@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('/index');
-});
+})->name('index');
 
 Route::get('/activity/index', 'ActivityController@index')->name("activity.index");
 Route::get('/activity/create', 'ActivityController@create')->name("activity.create");
