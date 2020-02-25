@@ -17,7 +17,7 @@ class CreateActivitiesTable extends Migration
             $table->bigIncrements('id');
             $table->string('title', 50);
             $table->text('description')->nullable();
-            $table->decimal('percentage', 4, 2);
+            $table->decimal('percentage', 5, 2);
             $table->decimal('score', 3, 2)->nullable();
             $table->timestamps();
         });

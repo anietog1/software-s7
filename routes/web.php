@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('/index');
 });
+
+Route::get('/activity/index', 'ActivityController@index')->name("activity.index");
+Route::get('/activity/create', 'ActivityController@create')->name("activity.create");
+Route::post('/activity/save', 'ActivityController@save')->name("activity.save");
+Route::get('/activity/show/{id}', 'ActivityController@show')->name("activity.show");
+Route::post('/activity/delete/{id}', 'ActivityController@delete')->name("activity.delete");
