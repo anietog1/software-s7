@@ -38,4 +38,8 @@ class Product extends Model
     {
         $this->attributes['price'] = $price;
     }
+
+    public function comments(){
+        return $this->hasMany(Comment::class);
+    }
 }
