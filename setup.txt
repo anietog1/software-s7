@@ -1,0 +1,22 @@
+Hola, recuerda crear una base de datos para trabajar
+con el proyecto, además de poner los valores adecuados
+en el archivo '.env'. Puedes -y recomiendo- copiar el
+archivo '.env.example' y luego realizar las modificaciones pertinentes.
+
+Se requiere actualizar las dependencias de composer, realizar migraciones,
+solicitar un key y hacer un seed para tener datos de muestra:
+
+$ composer require # para instalar las dependencias del proyecto
+$ php artisan migrate
+$ php artisan db:seed # puede que el seed falle; en tal caso, basta con repetirlo hasta que pase
+$ php artisan key:generate # para encriptar las comunicaciones
+
+Y ya, se puede correr:
+
+$ php artisan serve
+
+Disclaimer: Nótese que se puede tener múltiples problemas a la hora de
+ejecutar la migración debido a la configuración de httpd (apache server)
+o de los permisos de la base de datos o a que no se creó una base de datos
+previamente... recuerda crear una base de datos previamente, acomodarla en el '.env'
+y asegurar los permisos
