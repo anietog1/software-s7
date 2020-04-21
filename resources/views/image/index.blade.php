@@ -18,7 +18,7 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
-                    <img src="{{ URL::asset('storage/test.png') }}" />
+                    <img src="{{ 'https://s3.us-east-1.amazonaws.com/agustin-basurero/test.png' }}" />
                 </div>
             </div>
         </div>
