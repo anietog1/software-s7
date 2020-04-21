@@ -23,9 +23,9 @@ class ComposerStaticInitc6f6ee8e7fa9ede808396f7ac8451a91
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
-        '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'b6ec61354e97f32c0ae683041c78392a' => __DIR__ . '/..' . '/scrivo/highlight.php/HighlightUtilities/functions.php',
@@ -128,6 +128,7 @@ class ComposerStaticInitc6f6ee8e7fa9ede808396f7ac8451a91
         ),
         'F' => 
         array (
+            'Fruitcake\\Cors\\' => 15,
             'Fideloper\\Proxy\\' => 16,
             'Faker\\' => 6,
             'Facade\\Ignition\\' => 16,
@@ -154,6 +155,7 @@ class ComposerStaticInitc6f6ee8e7fa9ede808396f7ac8451a91
         'A' => 
         array (
             'Aws\\' => 4,
+            'Asm89\\Stack\\' => 12,
             'App\\' => 4,
         ),
     );
@@ -365,6 +367,10 @@ class ComposerStaticInitc6f6ee8e7fa9ede808396f7ac8451a91
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
+        'Fruitcake\\Cors\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/barryvdh/laravel-cors/src',
+        ),
         'Fideloper\\Proxy\\' => 
         array (
             0 => __DIR__ . '/..' . '/fideloper/proxy/src',
@@ -421,6 +427,10 @@ class ComposerStaticInitc6f6ee8e7fa9ede808396f7ac8451a91
         array (
             0 => __DIR__ . '/..' . '/aws/aws-sdk-php/src',
         ),
+        'Asm89\\Stack\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack',
+        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
@@ -452,6 +462,9 @@ class ComposerStaticInitc6f6ee8e7fa9ede808396f7ac8451a91
         'App\\Comment' => __DIR__ . '/../..' . '/app/Comment.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\Api\\ProductApi' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/ProductApi.php',
+        'App\\Http\\Controllers\\Api\\ProductApiV2' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/ProductApiV2.php',
+        'App\\Http\\Controllers\\Api\\ProductApiV3' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/ProductApiV3.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
@@ -470,6 +483,8 @@ class ComposerStaticInitc6f6ee8e7fa9ede808396f7ac8451a91
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Http\\Resources\\Product' => __DIR__ . '/../..' . '/app/Http/Resources/Product.php',
+        'App\\Http\\Resources\\Products' => __DIR__ . '/../..' . '/app/Http/Resources/Products.php',
         'App\\Interfaces\\ImageStorage' => __DIR__ . '/../..' . '/app/Interfaces/ImageStorage.php',
         'App\\Product' => __DIR__ . '/../..' . '/app/Product.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
@@ -480,6 +495,9 @@ class ComposerStaticInitc6f6ee8e7fa9ede808396f7ac8451a91
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'App\\Util\\ImageLocalStorage' => __DIR__ . '/../..' . '/app/Util/ImageLocalStorage.php',
+        'App\\Util\\ImageS3Storage' => __DIR__ . '/../..' . '/app/Util/ImageS3Storage.php',
+        'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/Cors.php',
+        'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/Asm89/Stack/CorsService.php',
         'Aws\\ACMPCA\\ACMPCAClient' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/ACMPCA/ACMPCAClient.php',
         'Aws\\ACMPCA\\Exception\\ACMPCAException' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/ACMPCA/Exception/ACMPCAException.php',
         'Aws\\AbstractConfigurationProvider' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/AbstractConfigurationProvider.php',
@@ -1885,6 +1903,8 @@ class ComposerStaticInitc6f6ee8e7fa9ede808396f7ac8451a91
         'Faker\\ValidGenerator' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/ValidGenerator.php',
         'Fideloper\\Proxy\\TrustProxies' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustProxies.php',
         'Fideloper\\Proxy\\TrustedProxyServiceProvider' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustedProxyServiceProvider.php',
+        'Fruitcake\\Cors\\CorsServiceProvider' => __DIR__ . '/..' . '/barryvdh/laravel-cors/src/CorsServiceProvider.php',
+        'Fruitcake\\Cors\\HandleCors' => __DIR__ . '/..' . '/barryvdh/laravel-cors/src/HandleCors.php',
         'GuzzleHttp\\Client' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Client.php',
         'GuzzleHttp\\ClientInterface' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/ClientInterface.php',
         'GuzzleHttp\\Cookie\\CookieJar' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Cookie/CookieJar.php',
